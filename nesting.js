@@ -138,8 +138,13 @@ var myCar = {
     3. Change atFaultForAccident from true to false.
 */
 
-//Code Here
-
+function recordCleaner() {
+  myCar.accidents.forEach((accident)=> {accident.atFaultForAccident = false})
+}
+for(i = 0; i < myCar.accidents.length; i++){
+  myCar.accident[i].atFaultForAccident = false
+}
+  
 
 
 ////////// PROBLEM 5 //////////
